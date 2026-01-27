@@ -416,5 +416,101 @@
 
 
 
+###### *problem 4:*
 
+###### *student address management system*
+
+*#include<stdio.h>*
+
+*struct Address {*
+
+    *char city\[20];*
+
+    *int pincode;*
+
+*};*
+
+*struct student{*
+
+    *int id;*
+
+    *char name\[30];*
+
+    *struct Address addr;*
+
+*};*
+
+*int main() {*
+
+    *struct student s1;*
+
+    *struct student \*ptr;*
+
+    *ptr = \&s1;*
+
+    
+
+   
+
+    *printf("Enter student ID:");*
+
+    *scanf("%d", \&ptr->id);*
+
+    
+
+    *printf("Enter student Name:");*
+
+    *scanf("%s",ptr->addr.city);*
+
+    *printf("Enter city:");*
+
+    *scanf("%s",ptr->addr.city);*
+
+    
+
+    *printf("Enter pincode:");*
+
+    *scanf("%d",\&ptr->addr.pincode);*
+
+    *printf("\\n--- student Details ---\\n");*
+
+    *printf("ID: %d\\n",ptr->id);*
+
+    *printf("Name: %s\\n",ptr->name);*
+
+    *printf("City:%s\\n",ptr->addr.city);*
+
+    *printf("Pincode: %d\\n",ptr->addr.pincode);*
+
+    *return 0;*
+
+*}*
+
+###### *output*
+
+*Enter student ID:101*
+
+*Enter student Name:indhu*
+
+*Enter city:kangeyam*
+
+*Enter pincode:638701*
+
+
+
+*--- student Details ---*
+
+*ID: 101*
+
+*Name:* 
+
+*City:kangeyam*
+
+*Pincode: 638701*
+
+
+
+
+
+*=== Code Execution Success*
 
