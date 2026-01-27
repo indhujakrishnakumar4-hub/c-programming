@@ -260,11 +260,161 @@
 
 *=== Code Execution Successful ===*
 
+
+
 ###### *problem 3: mobile recharge history(telecom app)*
 
 ###### *create a structure to store mobile number and recgarge amount. store and display one recgarge record.*
 
+
+
+*#include<stdio.h>*
+
+
+
+*struct structure{*
+
+    
+
+   *long int number;*
+
+    *float recharge;*
+
+    
+
+*};*
+
+*int main(){*
+
+*struct structure stru1;*
+
+
+
+ *stru1.number = 1234567890;*
+
+ *stru1.recharge = 500.00;*
+
+ 
+
+ *printf("Number :%ld\\n",stru1.number);*
+
+ *printf("Recharge :%.2f\\n",stru1.recharge);*
+
+ 
+
+ *return 0;*
+
+*}*
+
+######  *output*
+
+ *Number :1234567890*
+
+*Recharge :500.00*
+
 ###### 
+
+###### *2) nested if*
+
+
+
+*#include <stdio.h>*
+
+*struct student {*
+
+    *char firstname\[20];*
+
+    *char lastname\[20];*
+
+*};*
+
+*struct details {*
+
+    *char dept \[20];*
+
+    *int year;*
+
+    *struct student name;*
+
+*};*
+
+*int main(){*
+
+    *struct student stdname = {"indhuja","krishnakumar"};*
+
+    *struct details std1 = {"ECE",2025,stdname};*
+
+    *printf("My name is %s %s from the department %s, completed in the year of %d", std1.name.firstname, std1.name.lastname,std1.dept, std1.year);*
+
+    *return 0;*
+
+*}*
+
+###### *output*
+
+*My name is indhuja Krishnakumar from the department ECE, completed in the year of 2025*
+
+
+
+*=== Code Execution Successful ===*
+
+
+
+###### *3)Nested structure*
+
+*#include<stdio.h>*
+
+*struct student {*
+
+    *char name\[20];*
+
+    *int regno;*
+
+*};*
+
+*int main() {*
+
+    *struct student std1 = {"indhu",1021};*
+
+    *struct student \*point = \&std1;*
+
+    
+
+   
+
+    *printf("My name is %s \\n",point ->name);*
+
+    *printf("My name's memory address is %p \\n",point ->name);*
+
+    
+
+    *printf("My reg no is %d \\n",point ->regno);*
+
+    *printf("My regno's memory address is %p \\n",point ->regno);*
+
+    
+
+    *return 0;*
+
+*}*
+
+###### *output*
+
+*My name is indhu* 
+
+*My name's memory address is 0x7ffc35e17570* 
+
+*My reg no is 1021* 
+
+*My regno's memory address is 0x3fd* 
+
+
+
+
+
+*=== Code Execution Successful ===*
+
+
 
 
 
