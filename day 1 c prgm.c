@@ -168,30 +168,3 @@ Enter the pin:7412
 Retry
 Enter the pin:1568
 Your card is blocked
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
